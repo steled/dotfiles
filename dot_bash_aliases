@@ -1,0 +1,24 @@
+#### kubernetes ####
+alias k=kubectl
+complete -o default -F __start_kubectl k
+
+alias kctx=kubectx
+complete -o default -F _kube_contexts kctx
+
+alias kkonfig="kubectl konfig"
+
+alias kkrew="kubectl krew"
+
+#### terraform ####
+alias tf="terraform"
+alias tfaaa="terraform apply -auto-approve"
+alias tfaaavf="terraform apply -auto-approve -var-file "
+alias tfdaa="terraform destroy -auto-approve"
+alias tfdaavf="terraform destroy -auto-approve -var-file"
+alias tfi="terraform init"
+alias tfiu="terraform init -upgrade"
+alias tfp="terraform plan"
+alias tfpvf="terraform plan -var-file "
+
+#### general ####
+alias sshkgfr="ssh-keygen -f ~/.ssh/known_hosts -R "
